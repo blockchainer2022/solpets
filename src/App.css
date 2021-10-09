@@ -46,6 +46,25 @@ html {
   position: relative;
 }
 
+.roadMap::after {
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background: transparent
+    linear-gradient(
+      0deg,
+      #000506 0%,
+      #041d21 29%,
+      transparent 77%,
+      transparent 100%
+    );
+  z-index: 1;
+  opacity: 1;
+}
+
 /* ========================== Timer CSS Start ========================== */
 
 .timer-main {
