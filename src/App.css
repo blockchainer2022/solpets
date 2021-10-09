@@ -1,0 +1,322 @@
+html {
+  scroll-behavior: smooth;
+}
+.mobile-nav {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.active {
+  max-height: 1000px;
+}
+
+.banner {
+  background: transparent url(./assets/image/hero-banner.svg) 0% 0% no-repeat
+    padding-box;
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+
+.banner::before,
+.roadMap::before {
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  background: transparent
+    linear-gradient(180deg, #000000 0%, #000000 10%, #2963ab 100%) 0% 0%
+    no-repeat padding-box;
+  opacity: 0.6;
+  /* z-index: 100; */
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.banner-content,
+.roadmap-content {
+  z-index: 2;
+  position: relative;
+}
+
+/* ========================== Timer CSS Start ========================== */
+
+.timer-main {
+  margin-top: 40px;
+}
+
+.timer-main .flipdown {
+  /* margin: auto; */
+
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+.timer-main h2 {
+  color: #1a191b;
+  font-family: "Montserrat", sans-serif;
+}
+
+.timer-main p {
+  font-weight: 300;
+  color: #4a4a4a;
+  font-size: 26px;
+  line-height: 34px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flipdown.flipdown__theme-dark .rotor,
+.flipdown.flipdown__theme-dark .rotor-top,
+.flipdown.flipdown__theme-dark .rotor-leaf-front {
+  font-size: 40px;
+  color: #000000;
+  background: transparent linear-gradient(180deg, #b4b4b4 0%, #ffffff 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.flipdown.flipdown__theme-dark .rotor-bottom,
+.flipdown.flipdown__theme-dark .rotor-leaf-rear {
+  color: #000000;
+  background: transparent linear-gradient(180deg, #ffffff 0%, #767676 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.flipdown.flipdown__theme-dark .rotor:after {
+  border-top: solid 1px transparent;
+}
+
+.flipdown.flipdown__theme-dark
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3):before,
+.flipdown.flipdown__theme-dark
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+  background-color: transparent;
+  left: 113px;
+}
+
+.flipdown .rotor-group {
+  padding-right: 26px;
+}
+
+.flipdown.flipdown__theme-dark .rotor-group-heading:before {
+  color: #1a191b;
+  font-size: 15px;
+}
+.flipdown.flipdown__theme-dark
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3)::before {
+  display: none;
+}
+.flipdown.flipdown__theme-dark
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3)::after {
+  display: none;
+}
+.flipdown.flipdown__theme-dark .rotor-group {
+  position: relative;
+}
+.flipdown.flipdown__theme-dark .rotor-group .rotor-group-heading {
+  position: absolute;
+  top: 100%;
+  text-align: center;
+  width: 100%;
+  padding-right: 26px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.flipdown.flipdown__theme-dark .rotor-group .rotor-group-heading::before {
+  color: white;
+}
+.flipdown .rotor-group:last-child .rotor-group-heading {
+  padding-right: 0px;
+}
+.flipdown .rotor {
+  margin: 0;
+  border-radius: 0;
+  width: 40px;
+}
+.flipdown .rotor-leaf {
+  width: 40px;
+}
+.flipdown .rotor-bottom {
+  border-radius: 0;
+}
+.flipdown .rotor-leaf-front {
+  border-radius: 0;
+}
+.flipdown .rotor-top,
+.flipdown .rotor-bottom {
+  width: 40px;
+}
+.flipdown .rotor-leaf-front,
+.flipdown .rotor-leaf-rear {
+  width: 40px;
+}
+/* display: inline-block;
+text-align: center;
+width: auto; */
+
+@media (max-width: 640px) {
+  .flipdown {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 550px) {
+  .flipdown.flipdown__theme-dark .rotor-group .rotor-group-heading {
+    margin-top: 10px;
+  }
+  .flipdown .rotor-group {
+    padding-right: 10px;
+    float: none;
+    display: flex;
+  }
+}
+@media (max-width: 430px) {
+  .flipdown {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flipdown.flipdown__theme-dark .rotor-group .rotor-group-heading {
+    margin-top: 0px;
+  }
+}
+/* ========================== Timer CSS End ========================== */
+
+.about {
+  background: transparent linear-gradient(180deg, #050c15 0%, #585c62 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.about .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.about .owl-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.about .owl-nav button i {
+  font-size: 30px;
+}
+.about .owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: transparent;
+}
+
+@media (min-width: 1000px) {
+  .about .owl-stage-outer {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+/* OwnerShip section */
+
+.owner-sec {
+  background-image: url(./assets/image/ownership_bg.svg);
+  background-position: bottom left;
+}
+
+.card-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #6a8ac1;
+  border: 2px solid #ffffff80;
+  /* padding: 10px; */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.card-icon img {
+  width: 25px;
+}
+
+.roadMap {
+  background-image: url(./assets/image/roadmap_bg.png);
+  background-size: contain;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.fb-1,
+.fb-2,
+.fb-3,
+.fb-4,
+.fb-5,
+.fb-6,
+.fb-7,
+.fb-8,
+.fb-9 {
+  position: absolute;
+  opacity: 0.2;
+}
+.fb-1 {
+  top: 100px;
+  left: 100px;
+}
+
+.fb-2 {
+  bottom: 100px;
+  left: 20px;
+}
+
+.fb-3 {
+  top: 100px;
+  right: 200px;
+}
+
+.fb-4 {
+  bottom: 100px;
+  right: 100px;
+}
+.fb-5 {
+  top: 40%;
+  right: 100px;
+}
+.fb-6 {
+  top: 40%;
+  left: 100px;
+}
+.fb-7 {
+  top: 70%;
+  left: 40%;
+}
+.fb-8 {
+  top: 70%;
+  right: 100px;
+}
+.fb-9 {
+  top: 90%;
+  left: 30%;
+}
+
+@media (max-width: 768px) {
+  .fb-1,
+  .fb-2,
+  .fb-3,
+  .fb-4,
+  .fb-5,
+  .fb-6,
+  .fb-7,
+  .fb-8,
+  .fb-9 {
+    position: absolute;
+    opacity: 0.1;
+  }
+  .fb-9 {
+    display: none;
+  }
+}
