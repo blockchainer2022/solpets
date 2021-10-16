@@ -46,7 +46,12 @@ const Index = () => {
               >
                 <AiOutlineTwitter />
               </a>
-              <a href="#" className="inline-block ml-5">
+              <a
+                href="https://discord.gg/4g4rsm2Tgu"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block ml-5"
+              >
                 <SiDiscord />
               </a>
             </div>
@@ -90,7 +95,12 @@ const Index = () => {
             >
               <AiOutlineTwitter />
             </a>
-            <a href="#" className="inline-block ml-5">
+            <a
+              href="https://discord.gg/4g4rsm2Tgu"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block ml-5"
+            >
               <SiDiscord />
             </a>
           </li>
