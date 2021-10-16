@@ -39,7 +39,11 @@ const Index = () => {
               <ListItem text="Roadmap" link="#roadmap" />
             </ul>
             <div className="flex text-3xl">
-              <a href="#">
+              <a
+                href="https://twitter.com/sol_pets"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <AiOutlineTwitter />
               </a>
               <a href="#" className="inline-block ml-5">
@@ -76,6 +80,18 @@ const Index = () => {
           <li className="p-2 text-lg uppercase">
             <a className="block" href="#roadmap" onClick={openHandler}>
               Roadmap
+            </a>
+          </li>
+          <li className="p-2 text-xl flex justify-center items-center ">
+            <a
+              href="https://twitter.com/sol_pets"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiOutlineTwitter />
+            </a>
+            <a href="#" className="inline-block ml-5">
+              <SiDiscord />
             </a>
           </li>
         </ul>
