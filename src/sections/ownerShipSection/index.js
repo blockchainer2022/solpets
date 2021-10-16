@@ -25,8 +25,8 @@ const Index = () => {
             <div className=" sm:w-1/2 text-center mt-10 sm:mt-0 sm:pl-4 md:w-1/4">
               <Card
                 img={CardImage2}
-                text1="15 Oct 21"
-                text2="Lunch Date"
+                text1="20 Oct 21"
+                text2="Launch Date"
                 time
               />
             </div>
@@ -39,14 +39,14 @@ const Index = () => {
             <div className=" sm:w-1/2 text-center mt-10   md:w-1/4">
               <Card
                 img={CardImage5}
-                text1="14 Oct 21"
+                text1="19 Oct 21"
                 text2="White List Pre-Sale"
                 time
                 timeTxt="12 PM UTC"
               />
             </div>
             <div className=" sm:w-1/2 text-center mt-10  sm:pl-4 md:w-1/4">
-              <Card img={CardImage6} text1="0.8 SOL" text2="Presale Price" />
+              <Card img={CardImage6} text1="1 SOL" text2="Presale Price" />
             </div>
           </div>
         </div>
