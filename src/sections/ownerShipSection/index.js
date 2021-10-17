@@ -62,7 +62,7 @@ const Card = ({
   text1 = "10,000",
   text2 = "Total supply",
   time = false,
-  timeTxt = "12 AM UTC",
+  timeTxt = "12 PM UTC",
 }) => (
   <>
     <div className="relative bg-blue p-8 pt-12 h-full">
