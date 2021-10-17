@@ -204,6 +204,39 @@ width: auto; */
   .flipdown.flipdown__theme-dark .rotor-group .rotor-group-heading {
     margin-top: 0px;
   }
+
+  .flipdown.flipdown__theme-dark .rotor-group .rotor-group-heading::before {
+    font-size: 13px;
+  }
+}
+@media (max-width: 370px) {
+  .flipdown .rotor-top,
+  .flipdown .rotor-bottom {
+    width: 30px;
+  }
+  .flipdown .rotor-leaf-front,
+  .flipdown .rotor-leaf-rear {
+    width: 30px;
+  }
+
+  .flipdown .rotor {
+    margin: 0;
+    border-radius: 0;
+    width: 30px;
+  }
+  .flipdown .rotor-leaf {
+    width: 30px;
+  }
+  .flipdown.flipdown__theme-dark .rotor,
+  .flipdown.flipdown__theme-dark .rotor-top,
+  .flipdown.flipdown__theme-dark .rotor-leaf-front {
+    font-size: 30px;
+  }
+  .flipdown {
+    margin: 0;
+
+    width: 280px;
+  }
 }
 /* ========================== Timer CSS End ========================== */
 

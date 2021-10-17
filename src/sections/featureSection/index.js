@@ -80,8 +80,8 @@ const ContentPart = ({
 
 const Image = ({ img = Featurs1 }) => (
   <Cols>
-    <div className="mb-14 w-80 mx-auto md:w-auto">
-      <img src={img} alt="" className="mx-auto md:3/4" />
+    <div className=" mb-14 w-full sm:w-80 mx-auto md:w-auto">
+      <img src={img} alt="" className="w-full mx-auto md:w-3/4" />
     </div>
   </Cols>
 );
